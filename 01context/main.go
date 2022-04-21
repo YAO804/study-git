@@ -28,6 +28,7 @@ func main() {
 	fmt.Println("测试", flag)
 	fmt.Println("测试正常合并")
 	fmt.Println("master更改")
+	fmt.Println("hot fix 修改")
 }
 
 // 一个简单的任务
