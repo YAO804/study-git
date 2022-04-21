@@ -27,6 +27,7 @@ func main() {
 	waitGroup.Wait()
 	fmt.Println("测试", flag)
 	fmt.Println("测试正常合并")
+	fmt.Println("master更改")
 }
 
 // 一个简单的任务
