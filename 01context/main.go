@@ -13,8 +13,9 @@ import (
 // 3、使用 context
 
 var waitGroup sync.WaitGroup
-var ch = make(chan bool, 1) // 使用管道
-var flag bool               // 使用全局变量bool
+
+//var ch = make(chan bool, 1) // 使用管道
+var flag bool // 使用全局变量bool
 
 func main() {
 	ctx, cancelFunc := context.WithCancel(context.Background()) // 使用 ctx
@@ -24,6 +25,7 @@ func main() {
 	time.Sleep(time.Second * 5)
 	cancelFunc() // 通知取消函数执行
 	waitGroup.Wait()
+	fmt.Println("测试", flag)
 }
 
 // 一个简单的任务
