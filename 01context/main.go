@@ -26,6 +26,7 @@ func main() {
 	cancelFunc() // 通知取消函数执行
 	waitGroup.Wait()
 	fmt.Println("测试", flag)
+	fmt.Println("测试正常合并")
 }
 
 // 一个简单的任务
